@@ -1,0 +1,319 @@
+:root {
+    --titles: hsl(210, 10%, 33%);
+    --descriptions: hsl(201, 11%, 66%);
+    --button1: hsl(171, 66%, 44%);
+    --button2: hsl(233, 100%, 69%);
+    --button1Hover: hsl(171, 100%, 44%);
+    --button2Hover: hsl(258, 100%, 69%);
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url("images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: auto;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Main Area */
+.main {
+    margin-top: 5em;
+}
+
+.logoMain {
+    margin-bottom: 2em;
+}
+
+.titleMain {
+    font-size: 40px;
+    color: var(--titles);
+}
+
+.containerDesc {
+    font-size: 19px;
+    color: var(--descriptions);
+    text-align: center;
+    margin-bottom: 2.5em;   
+}
+
+.container__button {
+    display: inline;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0.75em 2em;
+    color: white;
+    background-color: var(--button1);
+    border: 2px solid transparent;
+    border-radius: 100px;
+    box-shadow: 0 0 10px var(--button1);
+    margin-right: 1em;
+}
+
+.container__button:hover {
+    background-color: var(--button1Hover);
+    font-size: 19px;
+    transition: 1s;
+    box-shadow: 0 0 10px var(--button1Hover);
+}
+
+.container__buttonSecondary {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0.75em 2em;
+    background-color: var(--button2);
+    box-shadow: 0 0 10px var(--button2);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 100px;
+}
+
+.container__buttonSecondary:hover {
+    background-color: var(--button2Hover);
+    box-shadow: 0 0 10px var(--button2Hover);
+    font-size: 19px;
+    transition: 1s;
+}
+
+/* Secondary Area */
+
+.secondary {
+    margin-top: 10em; 
+}
+
+.titleSecondary {
+    font-size: 35px;
+    color: var(--titles);
+    margin-bottom: 1em;
+}
+
+/*Third Area */
+
+.third {
+    display: flex;
+    margin: 1em;
+}
+
+.titlesThird {
+    display: block;
+    text-align: left;
+    text-align: left;
+    margin: 1em 10em 0 10em;
+}
+
+.titleThird {
+    display: block;
+    color: var(--titles);
+    font-size: 25px;
+    margin: 1em auto;
+}
+
+.descThird {
+    font-size: 19px;
+    color: var(--descriptions);
+}
+
+/* Fourth Area */
+
+.fourth {
+    margin: 10em;
+}
+
+.fourthImage {
+    margin-top: 4em;
+}
+
+/* First List Area */
+
+
+
+.listMain {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.imageListMain {
+    margin-bottom: 2.5em;
+}
+
+.listItemMain {
+    margin: 0 2em;
+}
+
+.titleListMain {
+    font-size: 25px;
+    color: var(--titles);
+}
+
+.descListMain {
+    margin: 1em;
+    font-size: 16px;
+    color: var(--descriptions);
+}
+
+/* Logos Area */
+
+.logosArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logosArea img {
+    margin: 10em 7em 10em 0;
+}
+
+.finalArea {
+    margin-bottom: 10em;
+}
+
+/* Footer Area */
+
+.footer {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.footer .socials {
+    text-align: center;
+    padding-bottom: 25px;
+    color: inherit;
+}
+
+.footer .socials a{
+    color: inherit;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+.footer .socials a:hover {
+    font-size: 25px;
+    border: 2px solid #c0c0c0;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul a {
+    color: var(--titles);
+    text-decoration: none;
+}
+
+.footer ul a:hover {
+    font-size: 19px;
+    color: blue;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 2em;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 940px) {
+    body {
+        margin: 2em;
+        background-image: url(images/bg-header-mobile.png);
+        font-size: 16px;
+    }
+
+    .titleMain {
+        margin-bottom: 0.5em;
+    }
+
+    .container__button {
+        display: block;
+        margin: 0.2em auto;
+    }
+
+    .container__buttonSecondary {
+        display: block;
+        margin: 0.75em auto;
+    }
+
+    .computerSecondary {
+        margin: 2em 0 2em 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .third {
+        display: block;
+    }
+
+    .titlesThird {
+        display: block;
+        text-align: center;
+        margin: 0 0 15em;
+    }
+
+    .fourth {
+        display: block;
+        margin: 0.2em auto;
+    }
+
+    .fourthImage {
+        margin: 2em 0 2em 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .listMain {
+        display: inline;
+        list-style-type: none;
+        justify-content: center;
+    }
+
+    .listItemMain {
+        margin: 2em;
+    }
+
+    .descListMain {
+        margin: 0 0 1em 0;
+    }
+
+    .logosArea {
+        display: block;
+        margin: 5em;
+    }
+
+    .logosArea img{
+        margin: 2em 0.25em;
+    }
+    
+    .finalArea {
+        margin: 10em 0 10em 0;
+    }
+
+    footer {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

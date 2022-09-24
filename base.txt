@@ -1,0 +1,7 @@
+<ul class="footerList">
+        <li class="footerItem">FAQs</li>
+        <li class="footerItem">Contact Us</li>
+        <li class="footerItem">Privacy Policy</li>
+        <li class="footerItem">Press Kit</li>
+        <li class="footerItem">Install Guide</li>
+      </ul>
